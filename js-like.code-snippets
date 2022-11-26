@@ -1,0 +1,62 @@
+{
+	
+	"var init": {
+		"scope": "javascript, javascriptreact, typescript",
+		"prefix": "v",
+		"body": [
+		  "${1|let,const|} ${2:name} = ${3:value};"
+		],
+		"description": "var init"
+	},
+
+	"length": {
+		"scope": "javascript, javascriptreact, typescript",
+        "prefix": "ln",
+		"body": [
+		  "${1:mvar}.length"
+		],
+		"description": "length"
+	},
+	"empty check": {
+		"scope": "javascript, javascriptreact, typescript",
+		"prefix": "emp",
+		"body": [
+		  "${1:mvar}.length == 0"
+		],
+		"description": "empty check"
+	  },
+	"and": {
+		"scope": "javascript, javascriptreact, typescript, dart",
+		"prefix": "and",
+		"body": [
+		  "&& "
+		],
+		"description": "and"
+	},
+
+
+	"Print to console": {
+		"scope": "javascript,typescript",
+		"prefix": "p",
+		"body": [
+			"console.log(${1:${TM_SELECTED_TEXT:\"hello\" + name}});",
+		],
+		"description": "Log output to console"
+	},
+
+	"print adobe": {
+		"scope": "javascriptreact",
+		"prefix": "pr",
+		"body": "$.writeln(${1})"
+	},
+
+	"return": {
+		"scope": "javascript,typescript,javascriptreact,dart,java,go",
+		"prefix": "rt",
+		"body": [
+			"return ${1}",
+		]
+	},
+
+	
+}

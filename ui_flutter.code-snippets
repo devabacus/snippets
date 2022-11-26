@@ -1,0 +1,40 @@
+{
+	"widget text": {
+		"scope": "dart",
+		"prefix": "wt",
+		"body": [
+		  "Text(${2:\"mytext\"})${1:,}"
+		],
+		"description": "widget text"
+	},	
+	"flutter start app": {
+		"scope": "dart",
+		"prefix": "app",
+		"body": [
+		  "import 'package:flutter/material.dart';",
+		  
+		  "void main() {"
+			runApp(const MyApp());
+		  }
+		  
+		  class MyApp extends StatelessWidget {
+			const MyApp({super.key});
+		  
+			@override
+			Widget build(BuildContext context) {
+			  return MaterialApp(
+				home: Scaffold(
+				  appBar: AppBar(title: const Text(\"myApp\")), 
+				  body: const Text(\"ivan\"),
+				  
+				),
+			  );
+			}
+		  }
+		  
+		  "
+		],
+		"description": "flutter start app"
+	},
+	
+}

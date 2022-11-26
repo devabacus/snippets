@@ -1,0 +1,39 @@
+{
+	"var": {
+		"prefix": "v",
+		"body": "var ${1:mvar} = ${2:'value'};"
+	},
+
+	"print": {
+		"prefix": "p",
+		"body": "print(${1:${TM_SELECTED_TEXT:\"hello\" + name}})"
+	},
+	"print format": {
+		"prefix": "pf",
+		"body": "print('${${1:varname}} blabla');"
+	},
+	"length": {
+		"prefix": "ln",
+		"body": [
+			"${1:mvar}.length"
+		],
+		"description": "length"
+	},
+	"empty check": {
+		"prefix": "emp",
+		"body": [
+			"${1:mvar}.isEmpty"
+		],
+		"description": "empty check"
+	},
+	
+
+	"get type of var": {
+		"prefix": "gvrt",
+		"body": "${1:myvar}.runtimeType"
+	},
+	"check instance of var": {
+		"prefix": "isinst",
+		"body": "${1:myvar} is ${2:int}"
+	},
+}

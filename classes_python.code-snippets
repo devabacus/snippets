@@ -1,0 +1,39 @@
+{
+	"new class": {
+		"prefix": "cls",
+		"body": [
+			"class ${1:ClsName}:",
+			"",
+			"    def __init__ (self${3}):",
+			"        pass",
+			"    $0",
+		],
+		"description": "new class"
+	},
+	"new class inheitance": {
+		"prefix": "clsp",
+		"body": [
+			"class ${1:ClsName}(${2:parentClass}):",
+			"",
+			"    def __init__ (self${3}):",
+			"        pass",
+			"    $0",
+		],
+		"description": "new class"
+	},
+	"__str__": {
+		"prefix": "fnstr",
+		"body": [
+			"def __str__(self):",
+			"    return ${1:self.title}"
+		],
+		"description": "__str__"
+	},
+	"__init__": {
+		"prefix": "fnit",
+		"body": [
+			"def __init__ (self):",
+			"    ${2:pass}"
+		]
+	},
+}

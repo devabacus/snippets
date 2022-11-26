@@ -1,0 +1,10 @@
+{
+	"string type": {
+		"scope": "python",
+		"prefix": "ts",
+		"body": [
+		  "str"
+		 ],
+		"description": "string type"
+	},
+}

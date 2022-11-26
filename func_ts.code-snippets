@@ -1,0 +1,53 @@
+{
+	"function init": {
+		"scope": "typescript",
+		"prefix": "fi",
+		"body": [
+			"function ${1:fName}(${3})${2::string} {",
+			"    ${4}",
+			"}"
+		],
+		"description": "function init"
+	},
+	"func short": {
+		"scope": "typescript",
+		"prefix": "fs",
+		"body": [
+		  "let ${1:sum} = (${2:x}: ${3:number}): ${4:number} => ${5:x*2};"
+		 ],
+		"description": "func short"
+	},
+
+	"param positional": {
+		"scope": "typescript",
+		"prefix": "pp",
+		"body": [
+		  "$x: $number"
+		 ],
+		"description": "param positional"
+	},
+	"param optional": {
+		"scope": "typescript",
+		"prefix": "po",
+		"body": [
+		  "$x?: $number"
+		 ],
+		"description": "param optional. Must follow required param"
+	},
+	"param default": {
+		"scope": "typescript",
+		"prefix": "pd",
+		"body": [
+		  "$param=$value"
+		 ],
+		"description": "param default"
+	},
+	"param list": {
+		"scope": "typescript",
+		"prefix": "pl",
+		"body": [
+		  "...$args"
+		 ],
+		"description": "param list"
+	},
+}

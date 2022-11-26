@@ -1,0 +1,51 @@
+{
+	"class declare": {
+		"prefix": "cd",
+		"body": [
+			"class ${1:Name}{",
+			"\t$0",
+			"}"
+		],
+		"description": "class declare"
+	},
+	"class inheretence": {
+		"scope": "dart",
+		"prefix": "cin",
+		"body": [
+		  "extends $ParentName"
+		 ],
+		"description": "class inheretence"
+	},
+
+	"new class inheritence": {
+		"prefix": "cdin ",
+		"body": [
+			"class ${1:Name} extends ${2:ParentName}{",
+			"  $0",
+			"}"
+		],
+		"description": "new class inheritence"
+	},
+	"class constructor": {
+		"scope": "dart",
+		"prefix": "cc",
+		"body": [
+		  "${1:MyClass}(${2:this.${3:a}});"
+		 ],
+		"description": "class constructor"
+	},
+
+	"class declare full": {
+		"scope": "dart",
+		"prefix": "cdf",
+		"body": [
+		  "class ${1:ClassName}${3: extends ${2:ParentName}}{",
+			"\t${4:final int a;}",
+			"\t${5:ClassName({required this.a\\});}",
+		  "}"
+		 ],
+		"description": "class declare full"
+	},
+		
+	
+}
