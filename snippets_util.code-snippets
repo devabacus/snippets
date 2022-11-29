@@ -17,9 +17,9 @@
 	},
 	
 	"surround line with quotes": {
-		"prefix": "slwq",
+		"prefix": "t",
 		"body": [
-		  "${TM_SELECTED_TEXT/(^)(.*)(\n)/\"   $2\",\n/gm}"
+		  "${TM_SELECTED_TEXT/(.*)$/\"\t$1\",/}"
 		 ],
 		"description": "surround line with quotes"
 	},
